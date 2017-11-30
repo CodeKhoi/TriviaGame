@@ -2,7 +2,7 @@ $(document).ready(function() {
 // Create a function that creates the start button and initial screen
 
 function initialScreen() {
-  startScreen = "<p class='text-center main-button-container'><a class='btn btn-lg btn-block start-button' href='#' role='button'>Call Functions</a></p>";
+  startScreen = "<p class='text-center main-button-container'><a class='btn btn-lg btn-block start-button' href='#' role='button'>Start Game!</a></p>";
   $(".mainArea").html(startScreen);
 }
 
@@ -92,7 +92,7 @@ function timerWrapper() {
 }
 
 function finalScreen() {
-  gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>All done, here's how you did!" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correctTally + "</p>" + "<p>Wrong Answers: " + incorrectTally + "</p>" + "<p>Unanswered: " + unansweredTally + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-lg btn-block reset-button' href='#' role='button'>Call function resetGame( ){ }</a></p>";
+  gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>All done, here's how you did!" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correctTally + "</p>" + "<p>Wrong Answers: " + incorrectTally + "</p>" + "<p>Unanswered: " + unansweredTally + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-lg btn-block reset-button' href='#' role='button'>Play Again!</a></p>";
   $(".mainArea").html(gameHTML);
 }
 
